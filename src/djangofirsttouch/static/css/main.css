@@ -1,0 +1,36 @@
+.modal{
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    left: 25px;
+    top: 50px;
+    z-index: 99999;
+    pointer-events: none;
+    background-color: red;
+    /*background: rgb(255,255,255);*/
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(23%,rgba(252,252,252,1)), color-stop(46%,rgba(242,242,242,1)), color-stop(75%,rgba(242,242,242,1)), color-stop(100%,rgba(221,221,221,1)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(252,252,252,1) 23%,rgba(242,242,242,1) 46%,rgba(242,242,242,1) 75%,rgba(221,221,221,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(252,252,252,1) 23%,rgba(242,242,242,1) 46%,rgba(242,242,242,1) 75%,rgba(221,221,221,1) 100%);
+    width: 500px;
+    height: 570px;
+    -webkit-border-radius: 7px;
+    -webkit-border-color: #808080;
+    -webkit-transform: translateX(-5%);
+    transform: translateX(-5%);
+    -webkit-transition: all 0.5s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+    transition: all 0.5s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+.modal:target{
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.g-button{
+    text-decoration: none;
+    text-decoration-color: #cccccc;
+    position: relative;
+    /*left: 240px;*/
+    width: 230px;
+    height: 40px;
+}

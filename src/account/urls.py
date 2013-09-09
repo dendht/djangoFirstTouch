@@ -12,5 +12,5 @@ urlpatterns = patterns('',
                        (r'^profile/', login_views.Profile.as_view()),
                        (r'^change_pass/', login_views.Passchange.as_view()),
                        (r'^recover_pass/', login_views.Recover.as_view()),
-                       (r'^blog/', include('blog.urls')),
+                       # (r'^list/', include('list.urls')),
                        )

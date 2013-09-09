@@ -6,10 +6,14 @@
 
     <form action='.' method='post'>
         <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
-
+    {% if request.user.email %}
+        you already registered your email
+    {% else %}
         {{ form }}
-
         <input type="submit" value="e-mail" />
+    {% endif %}
         <input type="hidden" name="next" value="{{ next|escape }}" />
     </form>
+    <a class="g-button" href="#modal">Bar graph animation</a>
+    <div class="modal" id="modal"></div>
 {% endblock %}

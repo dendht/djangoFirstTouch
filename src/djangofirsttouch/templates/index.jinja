@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Test env</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" type="text/css">
 </head>
 <body>
     <a href="/"><h1>Hi!</h1></a>
@@ -13,6 +14,7 @@
         <input type="button" value="logout" onclick="location.href='/account/logout'">
         <input type="button" value="change_pass" onclick="location.href='/account/change_pass'">
         <input type="button" value="profile" onclick="location.href='/account/profile'">
+{#        <input type="button" value="list" onclick="location.href='/list'">#}
     {% endif %}
 
     {% block content %}
